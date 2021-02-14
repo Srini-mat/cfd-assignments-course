@@ -1,0 +1,16 @@
+title: CFD Assignments
+description: All the assignments for CFD course are present here
+template:
+  repo: cfd-assignments-template
+  name: cfd-assignments
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
